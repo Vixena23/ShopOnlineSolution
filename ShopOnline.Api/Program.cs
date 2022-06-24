@@ -18,6 +18,7 @@ builder.Services.AddDbContextPool<ShopOnlineDbContext>( options =>
 );
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
 var app = builder.Build();
 
@@ -42,3 +43,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { } // fix problem with accessibility in test project, but need maybe better solution
