@@ -10,6 +10,9 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#api">Api</a></li>
+    <li><a href="#client">Client</a></li>
+    <li><a href="#tests">Test</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -30,6 +33,7 @@ Remember that I am working on a project all the time and that many solutions can
 ### Built With
 
 * [ASP .NET CORE API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0)
+* [Entity Framework](https://docs.microsoft.com/en-us/ef/)
 * [BlazorWebAssembly](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor)
 * [Bootstrap](https://getbootstrap.com)
 * [XUnit](https://xunit.net/)
@@ -37,7 +41,30 @@ Remember that I am working on a project all the time and that many solutions can
 * [FluentAssertions](https://fluentassertions.com/)
 
 
+<!-- API -->
+## Api
 
+<!-- CLIENT -->
+## Client
+
+<!-- TESTS -->
+## Tests
+
+## Unit tests
+
+## Integration tests
+
+I had some serious problems getting this topic started. I could write simple tests to controllers for 'get' requests, but didn't know what to do with database editing requests such as post or put.
+
+I found three solutions that I liked the most.
+
+### --- Test DB
+The first involves creating a test database with test data, and then performing tests on it.
+### --- Repository design pattern (which i used)
+The second is to use the 'repository' design pattern and define the data returned by this repository in advance (using Moqu).
+### --- Transactions
+The last one assumes the use of transactions when querying the database and then not saving them (so that the database is not updated).
+ 
 <!-- CONTRIBUTING -->
 ## Contributing
 
