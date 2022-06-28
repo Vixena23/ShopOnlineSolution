@@ -1,7 +1,6 @@
-
-namespace ShopOnline.Api.IntegrationTests
+namespace ShopOnline.Api.IntegrationTests.Tests
 {
-    public class ProductControllerTest: IClassFixture<WebApplicationFactory<Program>>
+    public class ProductControllerTest : IClassFixture<WebApplicationFactory<Program>>
     {
         private HttpClient _httpClient;
 
