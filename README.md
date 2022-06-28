@@ -25,6 +25,7 @@ A project is a simple online store, where i am testing various solutions, such a
 - Blazor assembly
 - Unit and integration testing with xUnit
 
+Remember that I am working on a project all the time and that many solutions can probably be done in a better way.
 
 ### Built With
 
