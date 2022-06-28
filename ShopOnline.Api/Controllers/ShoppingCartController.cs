@@ -92,7 +92,7 @@ namespace ShopOnline.Api.Controllers
                     return NoContent();
                 }
 
-                var product = await _productRepository.GetProductById(newCartItem.Id);
+                var product = await _productRepository.GetProductById(newCartItem.ProductId);
 
                 if (product == null)
                 {
@@ -101,7 +101,8 @@ namespace ShopOnline.Api.Controllers
 
                 var newCartItemDto = newCartItem.ConvertToDto(product);
 
-                return CreatedAtAction(nameof(GetItem), new {id = newCartItemDto.Id}, cartItemToAddDto);
+                return newCartItemDto;
+                //return CreatedAtAction(nameof(PostItem), new {id = newCartItemDto.Id}, cartItemToAddDto);
             }
             catch (Exception ex)
             {

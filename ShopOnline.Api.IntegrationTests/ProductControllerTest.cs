@@ -1,8 +1,3 @@
-using Xunit;
-using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
-using System.Threading.Tasks;
-
 
 namespace ShopOnline.Api.IntegrationTests
 {
